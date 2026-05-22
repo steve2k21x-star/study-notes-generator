@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Study Notes Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+    h1 {
+      margin-bottom: 8px;
+    }
+    #output {
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin-top: 16px;
+      border-radius: 4px;
+      background: #fafafa;
+    }
+    button {
+      margin-top: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Study Notes Tool</h1>
+  <p>Upload a PDF and generate summary, flashcards, key terms, and quiz questions.</p>
+
+  <input type="file" id="fileInput" accept="application/pdf" />
+  <br />
+  <button onclick="upload()">Generate Notes</button>
+
+  <div id="status"></div>
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
